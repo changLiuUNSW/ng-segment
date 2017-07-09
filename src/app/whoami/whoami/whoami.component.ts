@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-whoami',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./whoami.component.scss']
 })
 export class WhoamiComponent implements OnInit {
+  constructor(private modalService: NgbModal) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit() {}
+  open(content) {
+    this.modalService.open(content);
   }
-
 }
