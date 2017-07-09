@@ -1,2 +1,8 @@
-@import "./scss/abstracts/variables";
-@import "./scss/vendors/bootstrap";
+// abstacts
+ @import "./scss/abstracts/mixins";
+ @import "./scss/abstracts/variables";
+ // bootstrap
+ @import "./scss/vendors/bootstrap";
+
+  // components
+ @import "./scss/components/button";
